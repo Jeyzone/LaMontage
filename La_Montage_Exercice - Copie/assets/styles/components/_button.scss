@@ -1,0 +1,15 @@
+
+button{
+    background: none;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    font-family: 'Inter';
+    transition: .2s linear;
+    cursor: pointer;
+    &:hover{
+        background: black;
+        color: white;
+    }
+}

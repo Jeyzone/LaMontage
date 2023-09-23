@@ -1,0 +1,127 @@
+/********************** Footer part *************************/
+footer{
+    background: rgb(243, 241, 241);
+    margin: 0 237px 0 237px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .content-left{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--grey);
+        padding: 50px;
+        
+        input[type=text],input[type=email]{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0 10px 0;
+            border: 1px solid var(--grey);
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: grey;
+            font-weight: 700;
+            font-family: 'Inter';
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-size: 0.8rem;
+        }
+        textarea{
+            border: 1px solid var(--grey);
+            margin-bottom: 25px;
+            width: 100%;
+        }
+        input[type=submit]{
+            padding: 10px 25px 10px 25px;
+            color: grey;
+            border: 1px solid grey;
+            font-weight: 400;
+            font-family: 'Inter';
+            transition: .2s linear;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+        input[type=submit]:hover{
+            background: grey;
+            color: var(--white);
+        }
+    }
+    .content-right{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        h4{
+            text-transform: uppercase;
+            color: grey;
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-family: 'Inter';
+            letter-spacing: 1px;
+        }
+        p{
+            font-family: 'Merriweather';
+            font-size: 0.6rem;
+            line-height: 20px;
+            text-align: left;
+            color: grey;
+        }
+        .address-content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid var(--grey);
+            padding: 60px;
+            text-align: left;
+            width: 100%;
+        }
+        .phone-content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid var(--grey);
+            padding: 60px;
+            width: 100%;
+        }
+        .email-content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid var(--grey);
+            padding: 60px;
+            width: 100%;
+        }
+        .social-content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid var(--grey);
+            padding: 60px;
+            
+            ul{
+                @include alignChildren(space-between);
+                width: 100%;
+
+                li{
+                    padding-left: 0.8rem;
+                    i{
+                        border: 1px solid var(--grey);
+                        border-radius: 50%;
+                        padding: 15px;
+                        transition: .2s linear;
+                        cursor: pointer;
+                    }
+                    i:hover{
+                        background: var(--grey);
+                    }
+                }
+            }
+        }
+    }
+}

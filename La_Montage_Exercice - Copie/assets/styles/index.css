@@ -1,0 +1,333 @@
+/**************** General settings ******************************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/font/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "Merriweather";
+  src: url(/assets/font/Merriweather-Light.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../img/bg.jpg) repeat;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+:root {
+  --grey: #d6d2cdc5;
+  --white: rgb(233, 224, 208);
+  --black: #000000;
+}
+
+button {
+  background: none;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  font-family: "Inter";
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+button:hover {
+  background: black;
+  color: white;
+}
+
+/************* Header Part*********************/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/bg.jpg) center/cover;
+  position: relative;
+  min-height: 100vh;
+}
+header .main-container {
+  text-align: center;
+  margin: 0 0 -20px 0;
+}
+header .main-container .content h1 {
+  font-family: "Inter";
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+}
+header .main-container .content p {
+  color: white;
+  font-style: italic;
+  margin: 45px 0;
+}
+header .main-container .content-middle i {
+  color: white;
+  background: transparent;
+  font-size: 4rem;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 70%;
+  min-width: 700px;
+  background: var(--grey);
+}
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar li {
+  color: white;
+  background: none;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+header .navbar .navbar-left {
+  font-size: 0.8rem;
+}
+header .navbar .navbar-left ul li:hover {
+  background: var(--white);
+  color: var(--black);
+}
+header .navbar .navbar-left ul li:nth-child(1) {
+  background: var(--white);
+  color: var(--black);
+}
+header .navbar .navbar-right li:hover {
+  transform: scale(1.5);
+}
+
+/************************* Main part ***************************/
+main {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background: white;
+  min-height: 100vh;
+  margin: 0 237px 0 237px;
+}
+main .main-top p {
+  padding: 50px 0 50px 0;
+  color: var(--black);
+  font-family: "Merriweather";
+  font-size: 0.8rem;
+}
+main .main-top p:before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--grey);
+  width: 35%;
+  margin: 0 20px;
+  transform: translateY(-2px);
+}
+main .main-top p:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--grey);
+  width: 35%;
+  margin: 0 20px;
+  transform: translateY(-2px);
+}
+main .main-center h2 {
+  text-transform: uppercase;
+  font-family: "Inter";
+  letter-spacing: 2px;
+  font-size: 3rem;
+  margin: 0 0 50px 0;
+}
+main .main-center p {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  font-style: italic;
+  line-height: 40px;
+  padding-bottom: 50px;
+}
+main .main-center-img img {
+  width: 80%;
+  height: 80%;
+  padding-bottom: 50px;
+}
+
+/************************** Section part *************************/
+section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 237px 0 237px;
+  background: white;
+}
+section p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Inter";
+  letter-spacing: 3px;
+}
+section img {
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+section .text {
+  margin-top: 20px;
+  color: grey;
+  line-height: 30px;
+  text-align: left;
+}
+section .section-left {
+  padding: 70px 70px 70px 70px;
+  align-items: center;
+  border: 1px solid var(--grey);
+}
+section .section-right {
+  padding: 70px;
+  border: 1px solid var(--grey);
+}
+
+/********************** Footer part *************************/
+footer {
+  background: rgb(243, 241, 241);
+  margin: 0 237px 0 237px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .content-left {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--grey);
+  padding: 50px;
+}
+footer .content-left input[type=text], footer .content-left input[type=email] {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  border: 1px solid var(--grey);
+  margin-bottom: 10px;
+}
+footer .content-left label {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 700;
+  font-family: "Inter";
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+}
+footer .content-left textarea {
+  border: 1px solid var(--grey);
+  margin-bottom: 25px;
+  width: 100%;
+}
+footer .content-left input[type=submit] {
+  padding: 10px 25px 10px 25px;
+  color: grey;
+  border: 1px solid grey;
+  font-weight: 400;
+  font-family: "Inter";
+  transition: 0.2s linear;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+footer .content-left input[type=submit]:hover {
+  background: grey;
+  color: var(--white);
+}
+footer .content-right {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+footer .content-right h4 {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-family: "Inter";
+  letter-spacing: 1px;
+}
+footer .content-right p {
+  font-family: "Merriweather";
+  font-size: 0.6rem;
+  line-height: 20px;
+  text-align: left;
+  color: grey;
+}
+footer .content-right .address-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid var(--grey);
+  padding: 60px;
+  text-align: left;
+  width: 100%;
+}
+footer .content-right .phone-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid var(--grey);
+  padding: 60px;
+  width: 100%;
+}
+footer .content-right .email-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid var(--grey);
+  padding: 60px;
+  width: 100%;
+}
+footer .content-right .social-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid var(--grey);
+  padding: 60px;
+}
+footer .content-right .social-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .content-right .social-content ul li {
+  padding-left: 0.8rem;
+}
+footer .content-right .social-content ul li i {
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+  padding: 15px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+footer .content-right .social-content ul li i:hover {
+  background: var(--grey);
+}/*# sourceMappingURL=index.css.map */

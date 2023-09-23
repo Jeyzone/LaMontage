@@ -1,0 +1,80 @@
+/************* Header Part*********************/
+header{
+    @include alignChildren(center);
+    background: url(../img/bg.jpg) center/cover;
+    position: relative;
+    min-height: 100vh;
+    
+    .main-container{
+        text-align: center;
+        margin: 0 0 -20px 0;
+
+        .content{
+            h1{
+                font-family: 'Inter';
+                text-transform: uppercase;
+                color: white;
+                font-size: 3rem;
+            }
+            p{
+                color: white;
+                font-style: italic;
+                margin: 45px 0;
+            }
+        }
+        .content-middle{
+            i{
+                color: white;
+                background: transparent;
+                font-size: 4rem;
+            }
+        }
+        
+    }
+
+    .navbar{
+        @include alignChildren(space-between);
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 70%;
+        min-width: 700px;
+        background: var(--grey);
+
+        ul{
+            @include alignChildren(space-between);
+        }
+        li{
+            color: white;
+            background: none;
+            padding: 20px;
+            text-transform: uppercase;
+            font-family: 'Inter';
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: .2s linear;
+        }
+        .navbar-left{
+            font-size: 0.8rem;
+
+            ul{
+                li:hover{
+                    background: var(--white);
+                    color: var(--black);
+                }
+                li:nth-child(1){
+                    background: var(--white);
+                    color: var(--black);
+                }
+            }
+        }
+        .navbar-right{
+            li{
+                &:hover{
+                    transform: scale(1.50);
+                }
+            }
+        }
+    }
+}
